@@ -1,0 +1,203 @@
+{
+  "@@locale": "en",
+  "appTitle": "Planner+",
+  "@appTitle": {
+    "description": "The application title"
+  },
+  "tasks": "Tasks",
+  "@tasks": {
+    "description": "Tasks label"
+  },
+  "addTask": "Add Task",
+  "@addTask": {
+    "description": "Add task button"
+  },
+  "editTask": "Edit Task",
+  "@editTask": {
+    "description": "Edit task title"
+  },
+  "taskDetails": "Task Details",
+  "@taskDetails": {
+    "description": "Task details screen title"
+  },
+  "title": "Title",
+  "@title": {
+    "description": "Title field label"
+  },
+  "description": "Description",
+  "@description": {
+    "description": "Description field label"
+  },
+  "priority": "Priority",
+  "@priority": {
+    "description": "Priority field label"
+  },
+  "low": "Low",
+  "@low": {
+    "description": "Low priority"
+  },
+  "medium": "Medium",
+  "@medium": {
+    "description": "Medium priority"
+  },
+  "high": "High",
+  "@high": {
+    "description": "High priority"
+  },
+  "tags": "Tags",
+  "@tags": {
+    "description": "Tags field label"
+  },
+  "dueDate": "Due Date",
+  "@dueDate": {
+    "description": "Due date field label"
+  },
+  "completed": "Completed",
+  "@completed": {
+    "description": "Completed status"
+  },
+  "pending": "Pending",
+  "@pending": {
+    "description": "Pending status"
+  },
+  "search": "Search",
+  "@search": {
+    "description": "Search label"
+  },
+  "searchTasks": "Search tasks...",
+  "@searchTasks": {
+    "description": "Search hint text"
+  },
+  "filter": "Filter",
+  "@filter": {
+    "description": "Filter label"
+  },
+  "sort": "Sort",
+  "@sort": {
+    "description": "Sort label"
+  },
+  "all": "All",
+  "@all": {
+    "description": "All tasks filter"
+  },
+  "save": "Save",
+  "@save": {
+    "description": "Save button"
+  },
+  "cancel": "Cancel",
+  "@cancel": {
+    "description": "Cancel button"
+  },
+  "delete": "Delete",
+  "@delete": {
+    "description": "Delete button"
+  },
+  "deleteTask": "Delete Task",
+  "@deleteTask": {
+    "description": "Delete task action"
+  },
+  "deleteTaskConfirmation": "Are you sure you want to delete this task?",
+  "@deleteTaskConfirmation": {
+    "description": "Delete task confirmation message"
+  },
+  "noTasks": "No tasks yet",
+  "@noTasks": {
+    "description": "Empty state message"
+  },
+  "createFirstTask": "Create your first task",
+  "@createFirstTask": {
+    "description": "Empty state call to action"
+  },
+  "noTasksFound": "No tasks found",
+  "@noTasksFound": {
+    "description": "Search empty state"
+  },
+  "syncInProgress": "Syncing...",
+  "@syncInProgress": {
+    "description": "Sync in progress message"
+  },
+  "syncCompleted": "Sync completed",
+  "@syncCompleted": {
+    "description": "Sync completed message"
+  },
+  "syncFailed": "Sync failed",
+  "@syncFailed": {
+    "description": "Sync failed message"
+  },
+  "offline": "Offline",
+  "@offline": {
+    "description": "Offline status"
+  },
+  "online": "Online",
+  "@online": {
+    "description": "Online status"
+  },
+  "settings": "Settings",
+  "@settings": {
+    "description": "Settings screen title"
+  },
+  "theme": "Theme",
+  "@theme": {
+    "description": "Theme setting"
+  },
+  "light": "Light",
+  "@light": {
+    "description": "Light theme"
+  },
+  "dark": "Dark",
+  "@dark": {
+    "description": "Dark theme"
+  },
+  "system": "System",
+  "@system": {
+    "description": "System theme"
+  },
+  "language": "Language",
+  "@language": {
+    "description": "Language setting"
+  },
+  "sortByTitle": "Sort by Title",
+  "@sortByTitle": {
+    "description": "Sort by title option"
+  },
+  "sortByDate": "Sort by Date",
+  "@sortByDate": {
+    "description": "Sort by date option"
+  },
+  "sortByPriority": "Sort by Priority",
+  "@sortByPriority": {
+    "description": "Sort by priority option"
+  },
+  "groupByPriority": "Group by Priority",
+  "@groupByPriority": {
+    "description": "Group by priority option"
+  },
+  "groupByStatus": "Group by Status",
+  "@groupByStatus": {
+    "description": "Group by status option"
+  },
+  "groupByDate": "Group by Date",
+  "@groupByDate": {
+    "description": "Group by date option"
+  },
+  "noGrouping": "No Grouping",
+  "@noGrouping": {
+    "description": "No grouping option"
+  },
+  "taskTitleRequired": "Task title is required",
+  "@taskTitleRequired": {
+    "description": "Validation error for empty title"
+  },
+  "retry": "Retry",
+  "@retry": {
+    "description": "Retry button"
+  },
+  "error": "Error",
+  "@error": {
+    "description": "Error label"
+  },
+  "unknownError": "An unknown error occurred",
+  "@unknownError": {
+    "description": "Unknown error message"
+  }
+}

@@ -2,6 +2,8 @@
 
 A production-quality Flutter task planner application with offline-first architecture and automatic synchronization.
 
+> **✨ Fully tested on Arch Linux!** See [ARCH_LINUX_GUIDE.md](ARCH_LINUX_GUIDE.md) for complete setup instructions.
+
 ## Features
 
 ### Core Functionality
@@ -98,30 +100,41 @@ lib/
 ### Navigation
 - `go_router`: Declarative routing
 
-### UI
-- `flutter_svg`: SVG support
-- `shimmer`: Loading effects
+### Utils
 - `intl`: Internationalization
+- `uuid`: Unique ID generation
+- `path_provider`: File system paths
 
 ### Development
 - `build_runner`: Code generation
 - `hive_generator`: Hive adapter generation
 - `mocktail`: Testing
 - `bloc_test`: BLoC testing
-- `very_good_analysis`: Linting
+- `flutter_lints`: Linting
 
 ## Getting Started
 
 ### Prerequisites
-- Flutter SDK (3.0.0 or higher)
-- Dart SDK (3.0.0 or higher)
+- Flutter SDK (3.5.0 or higher)
+- Dart SDK (3.5.0 or higher)
 
-### Installation
+### Quick Start (Arch Linux)
+
+**Automated setup:**
+```bash
+./setup_arch.sh
+./run.sh
+```
+
+For detailed Arch Linux instructions, see [ARCH_LINUX_GUIDE.md](ARCH_LINUX_GUIDE.md)
+
+### Installation (All Platforms)
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/planner_plus.git
-cd planner_plus
+git clone https://github.com/Dimanchick22/Flutter.git
+cd Flutter
+git checkout claude/planner-plus-app-011CUPnsLBq25YvYFF47zGLh
 ```
 
 2. Install dependencies:
@@ -129,14 +142,24 @@ cd planner_plus
 flutter pub get
 ```
 
-3. Generate code (if needed):
+3. Generate code:
 ```bash
 flutter pub run build_runner build --delete-conflicting-outputs
 ```
 
 4. Run the app:
 ```bash
+# Linux Desktop
+flutter run -d linux
+
+# Web Browser
+flutter run -d chrome
+
+# Android
 flutter run
+
+# Or use the quick run script (Arch Linux)
+./run.sh
 ```
 
 ### Running Tests

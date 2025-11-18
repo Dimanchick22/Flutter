@@ -42,6 +42,19 @@ app.*.map.json
 /android/app/release
 
 # Generated files
-*.g.dart
+# *.g.dart - commented out because we need task_model.g.dart
 *.freezed.dart
 *.config.dart
+
+# Android local
+android/local.properties
+android/.gradle/
+android/captures/
+android/gradlew.bat
+android/gradle/wrapper/gradle-wrapper.jar
+
+# iOS local
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec

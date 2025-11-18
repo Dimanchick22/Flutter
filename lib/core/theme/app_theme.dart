@@ -15,10 +15,10 @@ class AppTheme {
         centerTitle: true,
         elevation: 0,
       ),
-      cardTheme: CardTheme(
+      cardTheme: const CardThemeData(
         elevation: 2,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.all(Radius.circular(12)),
         ),
       ),
       inputDecorationTheme: InputDecorationTheme(
@@ -34,9 +34,9 @@ class AppTheme {
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
         elevation: 4,
       ),
-      chipTheme: ChipThemeData(
+      chipTheme: const ChipThemeData(
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.all(Radius.circular(8)),
         ),
       ),
       dividerTheme: const DividerThemeData(
@@ -59,10 +59,10 @@ class AppTheme {
         centerTitle: true,
         elevation: 0,
       ),
-      cardTheme: CardTheme(
+      cardTheme: const CardThemeData(
         elevation: 2,
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(12),
+          borderRadius: BorderRadius.all(Radius.circular(12)),
         ),
       ),
       inputDecorationTheme: InputDecorationTheme(
@@ -78,9 +78,9 @@ class AppTheme {
       floatingActionButtonTheme: const FloatingActionButtonThemeData(
         elevation: 4,
       ),
-      chipTheme: ChipThemeData(
+      chipTheme: const ChipThemeData(
         shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(8),
+          borderRadius: BorderRadius.all(Radius.circular(8)),
         ),
       ),
       dividerTheme: const DividerThemeData(

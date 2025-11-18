@@ -4,7 +4,7 @@ import 'package:planner_plus/domain/usecases/usecase.dart';
 /// Use case for synchronizing tasks with remote server
 class SyncTasks extends NoParamsUseCase<SyncResult> {
   /// Creates a new SyncTasks use case
-  const SyncTasks(this.repository);
+  SyncTasks(this.repository);
 
   /// Task repository
   final TaskRepository repository;

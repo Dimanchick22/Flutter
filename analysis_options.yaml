@@ -25,11 +25,9 @@ linter:
     avoid_relative_lib_imports: true
     cancel_subscriptions: true
     close_sinks: true
-    comment_references: true
     directives_ordering: true
     lines_longer_than_80_chars: false
     no_logic_in_create_state: true
-    package_api_docs: true
     prefer_const_constructors: true
     prefer_const_declarations: true
     prefer_final_fields: true

@@ -71,7 +71,7 @@ void main() {
       when(() => mockLocalDataSource.saveTask(any()))
           .thenAnswer((_) async => Future.value());
       when(() => mockConnectivity.checkConnectivity())
-          .thenAnswer((_) async => [ConnectivityResult.none]);
+          .thenAnswer((_) async => ConnectivityResult.none);
 
       // act
       await repository.createTask(tTask);
@@ -85,7 +85,7 @@ void main() {
     test('should return true when connected to wifi', () async {
       // arrange
       when(() => mockConnectivity.checkConnectivity())
-          .thenAnswer((_) async => [ConnectivityResult.wifi]);
+          .thenAnswer((_) async => ConnectivityResult.wifi);
 
       // act
       final result = await repository.isOnline();
@@ -97,7 +97,7 @@ void main() {
     test('should return false when not connected', () async {
       // arrange
       when(() => mockConnectivity.checkConnectivity())
-          .thenAnswer((_) async => [ConnectivityResult.none]);
+          .thenAnswer((_) async => ConnectivityResult.none);
 
       // act
       final result = await repository.isOnline();

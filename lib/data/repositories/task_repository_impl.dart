@@ -188,17 +188,17 @@ class TaskRepositoryImpl implements TaskRepository {
   @override
   Future<bool> isOnline() async {
     final result = await connectivity.checkConnectivity();
-    return result.contains(ConnectivityResult.mobile) ||
-        result.contains(ConnectivityResult.wifi) ||
-        result.contains(ConnectivityResult.ethernet);
+    return result == ConnectivityResult.mobile ||
+        result == ConnectivityResult.wifi ||
+        result == ConnectivityResult.ethernet;
   }
 
   @override
   Stream<bool> watchConnectivity() {
-    return connectivity.onConnectivityChanged.map((results) {
-      return results.contains(ConnectivityResult.mobile) ||
-          results.contains(ConnectivityResult.wifi) ||
-          results.contains(ConnectivityResult.ethernet);
+    return connectivity.onConnectivityChanged.map((result) {
+      return result == ConnectivityResult.mobile ||
+          result == ConnectivityResult.wifi ||
+          result == ConnectivityResult.ethernet;
     });
   }
 }

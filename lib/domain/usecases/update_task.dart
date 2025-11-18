@@ -5,7 +5,7 @@ import 'package:planner_plus/domain/usecases/usecase.dart';
 /// Use case for updating an existing task
 class UpdateTask extends UseCase<void, Task> {
   /// Creates a new UpdateTask use case
-  const UpdateTask(this.repository);
+  UpdateTask(this.repository);
 
   /// Task repository
   final TaskRepository repository;

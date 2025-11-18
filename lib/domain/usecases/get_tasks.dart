@@ -5,7 +5,7 @@ import 'package:planner_plus/domain/usecases/usecase.dart';
 /// Use case for getting all tasks
 class GetTasks extends NoParamsUseCase<List<Task>> {
   /// Creates a new GetTasks use case
-  const GetTasks(this.repository);
+  GetTasks(this.repository);
 
   /// Task repository
   final TaskRepository repository;

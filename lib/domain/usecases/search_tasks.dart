@@ -5,7 +5,7 @@ import 'package:planner_plus/domain/usecases/usecase.dart';
 /// Use case for searching tasks
 class SearchTasks extends UseCase<List<Task>, String> {
   /// Creates a new SearchTasks use case
-  const SearchTasks(this.repository);
+  SearchTasks(this.repository);
 
   /// Task repository
   final TaskRepository repository;

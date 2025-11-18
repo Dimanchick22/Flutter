@@ -40,6 +40,7 @@ class TasksBloc extends Bloc<TasksEvent, TasksState> {
     // Start watching connectivity
     _connectivitySubscription = repository.watchConnectivity().listen((isOnline) {
       if (state is TasksLoaded) {
+        // ignore: invalid_use_of_visible_for_testing_member
         emit((state as TasksLoaded).copyWith(isOnline: isOnline));
       }
     });

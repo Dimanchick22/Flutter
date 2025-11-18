@@ -4,7 +4,7 @@ import 'package:planner_plus/domain/repositories/task_repository.dart';
 /// Use case for watching tasks stream
 class WatchTasks {
   /// Creates a new WatchTasks use case
-  const WatchTasks(this.repository);
+  WatchTasks(this.repository);
 
   /// Task repository
   final TaskRepository repository;

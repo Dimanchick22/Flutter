@@ -59,15 +59,33 @@ else
     echo ""
 fi
 
+# Clean previous build
+echo ""
+echo "Cleaning previous build..."
+flutter clean
+
 # Install Flutter dependencies
 echo ""
 echo "Installing Flutter dependencies..."
-flutter pub get
+if ! flutter pub get; then
+    echo -e "${RED}✗ Failed to install dependencies${NC}"
+    echo ""
+    echo "If you see version conflicts, try:"
+    echo "  flutter pub cache clean"
+    echo "  flutter pub get"
+    echo ""
+    exit 1
+fi
 
 # Generate code
 echo ""
 echo "Generating code..."
-flutter pub run build_runner build --delete-conflicting-outputs
+if ! flutter pub run build_runner build --delete-conflicting-outputs; then
+    echo -e "${YELLOW}⚠ Code generation failed, but this might be okay${NC}"
+    echo "You can try running it manually later:"
+    echo "  flutter pub run build_runner build --delete-conflicting-outputs"
+    echo ""
+fi
 
 # Check for Flutter doctor issues
 echo ""
